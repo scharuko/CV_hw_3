@@ -14,8 +14,8 @@ def findArucoMarkers(img, markerSize =4, totalMarkers=50, draw=True):
     bboxs, ids, rejected = aruco.detectMarkers(gray, arucoDict, parameters = arucoParam)
     return (bboxs)
 # load the camera images captured seperated by 7.5 cm
-img0 = cv2.imread('picture_left_1.png')
-img1 = cv2.imread('picture_right_1.png')
+img0 = cv2.imread(r"C:\Users\sheet\OneDrive\Documents\ComputerVision\Assignement3\picture_left_1.png")
+img1 = cv2.imread(r"C:\Users\sheet\OneDrive\Documents\ComputerVision\Assignement3\picture_right_1.png")
 
 #disparity equation d = basline(8cm) * focallength(1.636331765375964e+03)/(ul - ur)
 
